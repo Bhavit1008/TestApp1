@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:id="@+id/chat_parent">
+
+    <RelativeLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/layout_round"
+        android:gravity="bottom"
+        android:paddingBottom="9dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:elevation="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        >
+
+        <!--<ai.api.ui.AIButton-->
+        <!--android:id="@+id/micButton"-->
+        <!--style="@style/ApiAi.Microphone"-->
+        <!--android:layout_height="152dp"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:visibility="visible" />-->
+
+        <ImageView
+            android:id="@+id/sendBtn"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="4dp"
+            android:background="@drawable/ic_send_black_24dp"
+            android:elevation="8dp"
+            android:focusableInTouchMode="true"
+            android:focusable="true"/>
+
+
+        <EditText
+            android:id="@+id/queryEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/sendBtn"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+            android:paddingTop="4dp"
+            android:textSize="16sp"
+            android:background="@null"
+            android:hint="Type a text"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/chatScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/inputLayout">
+
+        <LinearLayout
+            android:id="@+id/chatLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

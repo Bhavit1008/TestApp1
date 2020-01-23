@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:elevation="11dp"
+    android:background="@drawable/dialog_corner">
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name / नाम"
+        android:elevation="8dp"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:elevation="8dp"
+        android:layout_marginTop="18dp"
+        android:id="@+id/edit_complaint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_username"
+        android:layout_alignParentStart="true"
+        android:hint="Complaint / शिकायत"
+        android:textSize="18sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/age_gender"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/edit_complaint">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Age / आयु"
+            android:id="@+id/age"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Gender"
+            android:id="@+id/gender"/>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@+id/age_gender"
+    android:gravity="right"
+    android:layout_marginTop="18dp">
+    <Button
+        android:layout_alignLeft="@id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:background="#fff"
+        android:textColor="#3E4FAC"
+        android:layout_below="@id/edit_complaint"
+        android:text="cancel"
+        android:layout_marginRight="20dp"
+        android:id="@+id/cancel_btn"/>
+
+    <Button
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:text="Submit"
+        android:elevation="8dp"
+        android:background="#3E4FAC"
+        android:id="@+id/submit"
+        android:layout_below="@id/edit_complaint"
+        />
+</LinearLayout>
+
+</RelativeLayout>

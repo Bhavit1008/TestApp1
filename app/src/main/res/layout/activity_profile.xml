@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <Button
+        android:elevation="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Logout"
+        android:id="@+id/logout"
+        android:background="@drawable/profile_btn"
+        android:textColor="#fff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/profile"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/profile_pic"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/profile_pic"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:id="@+id/line"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="One stop solution for crime registration"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="chat"
+            android:id="@+id/chat"
+            android:background="@drawable/profile_btn"
+            android:textColor="#fff"
+            android:elevation="8dp"
+            android:layout_marginRight="28dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="maps"
+            android:elevation="8dp"
+            android:background="@drawable/profile_btn"
+            android:textColor="#fff"
+            android:id="@+id/maps_complaint_btn"
+            android:layout_marginLeft="28dp"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtloc"/>
+
+
+</RelativeLayout>
